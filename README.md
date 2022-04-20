@@ -141,6 +141,19 @@ ________________________
 
 Chave Primaria: Forma de identificar um registro. Chave UNICA para cada registro. Gera melhor peformace na busca. Pode ser unica ou composta. EX: cpf.
 
+EX: alter table Clientes add constraint pk_cliente primary key (Codigo)
 
 
-Chave Estrangeira: É uma chave que vai fazer uma relaçao de uma tabela com outra.
+
+Chave Estrangeira: É uma chave que vai fazer uma relaçao de uma tabela com outra tabela.
+
+UMA CHAVE ESTRANGEIRA SEMPRE SERA UMA COPIA DE UMA CHAVE PRIMARIA
+
+___________________________
+
+##### JOIN
+
+- inner join : Pega todos os clientes que estao na tabela de pedidos : vai retornar o que tem nas duas tabelas
+- left join : Informações que estao a esquerda
+- right join : Informações que estao a direita
+
